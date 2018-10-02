@@ -21,7 +21,7 @@ MAINTAINER martin scharm
 
 # include the docompiler.jar
 # see https://github.com/binfalse/DocumentObjectCompiler
-COPY docompiler.jar /usr/bin/
+COPY DocumentObjectCompiler-0.6.3-jar-with-dependencies.jar /usr/bin/docompiler.jar
 
 # the docompiler is out entry point
 ENTRYPOINT ["java", "-jar", "/usr/bin/docompiler.jar"]
